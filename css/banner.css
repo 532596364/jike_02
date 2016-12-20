@@ -1,0 +1,122 @@
+.j-banner{
+	height: 80px;
+    width: 100%;
+    min-width: 1000px;
+    background: url("../imgs/jbanner.jpg") no-repeat center;
+    background-size: 1920px 80px;
+    box-sizing: border-box;
+}
+.j-banner .j-wraper {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 18px;
+}
+.j-banner ul {
+    width: 1000px;
+}
+.j-banner ul li {
+    float: left;
+    width: 178px;
+    height: 49px;
+    background: url("../imgs/btn.png") no-repeat center;
+    margin-left: 5px;
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    left: 202px;
+    transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+}
+.j-banner ul li:hover {
+    background: url("../imgs/btn-hover.png") no-repeat center;
+    transition: all .3s;
+    transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+}
+.j-banner ul li .new-icon {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 1px;
+    height: 34px;
+    width: 34px;
+}
+.j-banner ul li .hot-icon {
+    display: inline-block;
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    top: 0;
+    left: 1px;
+}
+.j-banner ul li a {
+    display: inline-block;
+    width: 178px;
+    height: 49px;
+    line-height: 44px;
+    font-size: 18px;
+    color: #1e5294;
+    text-align: center;
+    text-decoration: none;
+}
+.j-banner #j-close {
+    position: absolute;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #9395a4;
+    top: 3px;
+    right: 3px;
+    cursor: pointer;
+    transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+}
+.j-banner #j-close:hover {
+    background: #eaeaed;
+    transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+}
+.j-banner #j-close:before {
+    display: inline-block;
+    content: '';
+    width: 2px;
+    height: 14px;
+    background: #2c2d4e;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -7px;
+    margin-left: -1px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+.j-banner #j-close:after {
+    display: inline-block;
+    content: '';
+    width: 2px;
+    height: 14px;
+    background: #2c2d4e;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -7px;
+    margin-left: -1px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+

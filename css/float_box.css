@@ -1,0 +1,101 @@
+#float_box{
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	width: 34px;
+	height: auto;
+	position: fixed;
+	left: 50%;
+	margin-left: 510px;
+	bottom: 50px;
+	z-index: 2000;
+}
+#float_box>div:nth-child(odd){
+	width: 34px;
+	height: 34px;
+}
+#float_box>div:nth-child(even){
+	width: 34px;
+	height: 35px;
+}
+/***********置顶************/
+#float_box>div:nth-child(1){
+	background: url(../imgs/gotop.jpg) 0 0 no-repeat /34px 103px;;
+    width: 34px;
+    height: 34px;
+    display: none;
+}
+#float_box>div:nth-child(1):hover{
+	background: url(../imgs/gotop2.jpg) 0 0 no-repeat /34px 103px;
+}
+/***********下载app************/
+#float_box>div:nth-child(2){
+	border-bottom: 1px solid #e0e0e0;
+}
+#float_box>div:nth-child(2) .jk-app{
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background: #f7f7f7 url(../imgs/phone-1.png) center center no-repeat / 12px 24px;
+}
+#float_box>div:nth-child(2) .jk-app .appewm{
+	display: block;
+	width: 126px;
+	height: 159px;
+	background: url(../imgs/appewm.png) center center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    z-index: 2100;
+    left: -126px;
+    top: -70px;
+    display: none;
+}
+#float_box>div:nth-child(2) .jk-app:hover{
+	background: #f7f7f7 url(../imgs/phone-2.png) center center no-repeat / 12px 24px;;
+}
+#float_box>div:nth-child(2) .jk-app:hover .appewm{
+	display: block;
+}
+
+
+/***********客服************/
+#float_box>div:nth-child(4){
+	border-top: 1px solid #e0e0e0;
+}
+#float_box>div:nth-child(4) a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background: #f7f7f7 url(../imgs/kfu1.png) center center no-repeat;
+}
+#float_box>div:nth-child(4) a span{
+	width: 180px;
+	height: 42px;
+	padding: 5px;
+	text-align: center;
+	display: block;
+	position: absolute;
+	left: -180px;
+	top: 0;
+	background: #f7f7f7;
+    color: #333;
+    font-size: 12px;
+    display: none;
+}
+#float_box>div:nth-child(4):hover span{
+	display: block;
+}
+.kefu i {
+    heihgt: 20px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-left: 10px solid #f7f7f7;
+    border-bottom: 8px solid transparent;
+    position: absolute;
+    right: -10px;
+    top: 12px;
+}
